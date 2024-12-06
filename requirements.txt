@@ -1,6 +1,6 @@
 pycaret==2.3.10
 streamlit==1.10.0
-scikit-learn==0.24.2  # Required by pycaret==2.3.10
+scikit-learn==0.23.2  # Required by pycaret==2.3.10
 numpy>=1.18.0         # Core library for numerical operations
 pandas>=1.0.0         # Required for data manipulation
 scipy>=1.4.0          # Required for mathematical operations
