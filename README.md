@@ -1,6 +1,8 @@
 # D-Fraudify
 
-D-Fraudify is a robust and scalable fraud detection framework designed to identify anomalies in financial transactions and protect against fraudulent activities. With advanced machine learning models and efficient algorithms, this project aims to empower organizations with actionable insights to safeguard their operations.
+![D-Fraudify Logo](logo.webp)
+
+D-Fraudify is a machine learning-driven solution for detecting online payment fraud. This project utilizes advanced models and intuitive user interfaces to provide a streamlined fraud detection pipeline. It is suitable for research, education, and real-world applications in financial fraud prevention.
 
 ---
 
@@ -10,8 +12,8 @@ D-Fraudify is a robust and scalable fraud detection framework designed to identi
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Project Structure](#project-structure)
 - [Dataset](#dataset)
-- [Model Details](#model-details)
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
@@ -20,103 +22,87 @@ D-Fraudify is a robust and scalable fraud detection framework designed to identi
 
 ## Introduction
 
-Fraud detection is a critical challenge in the financial domain. D-Fraudify leverages cutting-edge machine learning techniques to identify fraudulent activities with high precision and recall. The framework is flexible, allowing integration into various platforms and can be tailored to meet domain-specific requirements.
+Fraud detection in online payments is critical for financial security. D-Fraudify provides a comprehensive framework that integrates machine learning models with a user-friendly interface for detecting fraudulent transactions. With real-world datasets and efficient algorithms, the project ensures accuracy and scalability.
 
 ---
 
 ## Features
 
-- **Anomaly Detection**: Detect outliers and suspicious patterns in transactional data.
-- **Scalable**: Handles large datasets efficiently.
-- **Customizable**: Easily adaptable to different datasets and domains.
-- **Interactive Visualization**: Provides insights into model predictions and fraud patterns.
-- **Open Source**: Fully customizable and extensible for your needs.
+- **Machine Learning Models**: Includes a trained Decision Tree model (`dtmodel.pkl`).
+- **User Interface**: A Python-based user interface (`ui.py`) for easy interaction.
+- **Notebook for Exploration**: An interactive Jupyter notebook for exploring fraud detection strategies.
+- **Pre-trained Model**: Ready-to-use fraud detection model.
+- **Open Source**: Fully customizable and extendable for further enhancements.
 
 ---
 
 ## Installation
 
 1. Clone the repository:
-
     ```bash
     git clone https://github.com/gp0814/D-Fraudify.git
     cd D-Fraudify
     ```
 
-2. Install the required dependencies:
-
+2. Install dependencies:
     ```bash
     pip install -r requirements.txt
     ```
 
-3. Run initial setup:
-
+3. (Optional) Run the application locally:
     ```bash
-    python setup.py install
+    python ui.py
     ```
 
 ---
 
 ## Usage
 
-1. Preprocess your dataset using the provided utilities.
-2. Train the model using the `train.py` script:
+1. **Interactive Notebook**: Explore the `online-payment-fraud-detection.ipynb` file to understand the model training and testing process.
+2. **Model Integration**: Use the pre-trained `dtmodel.pkl` file for predictions.
+3. **Run Interface**: Launch `ui.py` to test fraud detection in an interactive environment.
 
-    ```bash
-    python train.py --dataset <path_to_dataset>
-    ```
+---
 
-3. Evaluate the model using `evaluate.py`:
+## Project Structure
 
-    ```bash
-    python evaluate.py --model <path_to_model> --test_data <path_to_test_data>
-    ```
-
-4. Visualize results with the visualization module:
-
-    ```bash
-    python visualize.py
-    ```
-
-Refer to the [examples](examples/) directory for complete workflows.
+- `ui.py`: The user interface for running the model locally.
+- `dtmodel.pkl`: Pre-trained Decision Tree model.
+- `online-payment-fraud-detection.ipynb`: Jupyter notebook for model exploration.
+- `requirements.txt`: List of dependencies.
+- `logo.webp`: Logo for the project.
+- `Procfile`: Configuration for deploying to platforms like Heroku.
 
 ---
 
 ## Dataset
 
-This repository does not include any preloaded datasets. To get started, use publicly available datasets like:
+The project leverages an online payment fraud dataset for model training and testing. You can experiment with publicly available datasets, such as:
 
 - [Kaggle Credit Card Fraud Detection Dataset](https://www.kaggle.com/mlg-ulb/creditcardfraud)
-- [PaySim Financial Simulator](https://github.com/EdgarLopezPhD/PaySim)
 
-Ensure your dataset is formatted according to the specifications in the `data/` directory.
-
----
-
-## Model Details
-
-D-Fraudify incorporates various state-of-the-art machine learning algorithms, including:
-
-- Random Forest
-- Gradient Boosting Machines
-- Neural Networks
-- XGBoost
-
-Hyperparameter tuning and model selection are managed with automated scripts for reproducibility.
+Ensure your dataset is formatted appropriately before use.
 
 ---
 
 ## Contributing
 
-We welcome contributions from the community! To contribute:
+We welcome contributions to enhance the project! Here's how you can help:
 
 1. Fork the repository.
-2. Create a new branch: `git checkout -b feature/YourFeature`.
-3. Commit your changes: `git commit -m "Add your feature"`.
-4. Push to the branch: `git push origin feature/YourFeature`.
-5. Open a Pull Request.
-
-Please review our [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
+2. Create a new branch for your feature:
+    ```bash
+    git checkout -b feature/YourFeature
+    ```
+3. Commit your changes:
+    ```bash
+    git commit -m "Add your feature"
+    ```
+4. Push your changes:
+    ```bash
+    git push origin feature/YourFeature
+    ```
+5. Open a pull request.
 
 ---
 
@@ -131,6 +117,9 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 For questions, feedback, or collaboration:
 
 - **Author**: [gp0814](https://github.com/gp0814)
-- **Email**: [gkp5625@gmail.com]
-- **GitHub Issues**: [Create an Issue](https://github.com/gp0814/D-Fraudify/issues)
-  
+- **Email**: gkp5625@gmail.com
+- **Issues**: [Create an Issue](https://github.com/gp0814/D-Fraudify/issues)
+
+---
+
+Thank you for exploring D-Fraudify!
